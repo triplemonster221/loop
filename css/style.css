@@ -228,3 +228,61 @@ textarea {
   font-size: 21px;
   line-height: 26px;
 }
+
+/*collection*/
+
+.collection {
+  padding-top: 60px;
+  padding-bottom: 58px;
+  background: #F9F6F1;
+}
+
+.collection__inner {
+  display: flex;
+}
+
+.collection__box {
+  width: 50%;
+  position: relative;
+}
+
+.collection__span {
+  font-weight: 500;
+}
+
+.collection__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.collection__info {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+.collection__btn {
+  width: 80px;
+  height: 30px;
+  display: block;
+  background: #D7B399;
+  text-align: center;
+  color: #fff;
+  padding: 2px 5px;
+  transition: all .3s ease;
+}
+
+.collection__btn:hover {
+  box-shadow: 6px 5px 10px 0px #d7b399;
+}
+
+.collection__img {
+  position: absolute;
+  right: 50px;
+  bottom: -57px;
+}
