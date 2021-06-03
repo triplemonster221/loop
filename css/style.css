@@ -34,7 +34,7 @@ a {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  
+  margin: 0;
 }
 
 h2 {
@@ -206,3 +206,25 @@ textarea {
   top: 14px;
 }
 
+/*free*/
+
+.free {
+  padding: 80px 10px 69px;
+  background: #212121;
+  color: #fff;
+  text-align: center;
+}
+
+.free__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  margin-bottom: 23px;
+}
+
+.free__text {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 26px;
+}
