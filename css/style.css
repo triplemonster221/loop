@@ -18,6 +18,10 @@ body {
   padding: 0;
 }
 
+p {
+  margin: 0;
+}
+
 ul,li {
   list-style: none;
   margin: 0;
@@ -46,6 +50,28 @@ textarea {
   max-width:1140px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  width: 240px;
+  height: 55px;
+  background: #D7B399;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 17px 5px 18px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  transition: all .3s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #D7B399;
+  border: 1px solid #D7B399;
+  font-weight: 600;
 }
 
 /*header*/
@@ -109,8 +135,74 @@ textarea {
   margin-left: 15px;
 }
 
+/*banner*/
 
+.banner {
+  padding-top: 170px;
+  padding-bottom: 133px;
+}
 
-.header__info {
+.banner__inner {
+  display: flex;
+}
+
+.banner__sale {
+  max-width: 570px;
+  width: 100%;
+}
+
+.banner__sale-title {
+  font-size: 30px;
+  letter-spacing: 0.02em;
+  line-height: 37px;
+  margin-bottom: 35px;
+}
+
+.banner__sale-sale {
+  font-weight: bold;
+  font-size: 55px;
+  letter-spacing: 0.04em;
+  line-height: 67px;
+  margin-bottom: 55px;
+}
+
+.banner__btn {
 
 }
+
+.banner__img {
+  position: relative;
+}
+
+.banner__img-price {
+  position: absolute;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.new__price {
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: 0.02em;
+  color: #D84033;
+  right: 0;
+  top: 30px;
+}
+
+.old__price {
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  right: 0;
+}
+
+.old__price::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #000;
+  top: 14px;
+}
+
