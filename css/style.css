@@ -442,3 +442,16 @@ textarea {
   content: '';
   background-image: url(../img/insta.svg);
 }
+
+.footer__bottom {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__bottom p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #212121;
+}
