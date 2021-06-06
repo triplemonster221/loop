@@ -356,3 +356,89 @@ textarea {
   height: 7px;
   width: 20px;
 }
+
+/* footer */
+
+.footer {
+
+}
+
+.footer__top {
+  padding: 80px 0;
+  background: #212121;
+  color: #fff;
+}
+
+.footer__top-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__top__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__top__info {
+  width: 600px;
+}
+
+.footer__box-list+.footer__box-list {
+  margin-top: 5px;
+}
+
+.footer__box-list {
+  transition: all .3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.footer__box-list:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.footer__box-title {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.footer__box-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #CBCFD4;
+}
+
+.footer-social {
+  position: relative;
+  padding-left: 26px;
+
+}
+
+.footer-social::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 2px;
+  background-repeat: no-repeat;
+}
+
+.vk::after {
+  content: '';
+  background-image: url(../img/vk.svg);
+}
+
+.face::after {
+  content: '';
+  background-image: url(../img/face.svg);
+}
+
+.insta::after {
+  content: '';
+  background-image: url(../img/insta.svg);
+}
