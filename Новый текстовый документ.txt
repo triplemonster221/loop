@@ -1,0 +1,91 @@
+git clone 
+git add .
+git commit -m ''
+git commit -am ''
+git pull origin master
+git push origin master
+git status
+
+
+
+
+
+сайт галпа
+сайт npm
+npm init - инициализация нового проекта
+npm i gulp --save-dev -- установка галпа локально
+gulpfile.js -- создаем файл в котором будет писаться все 
+создаем структура  
+npm i gulp-sass (пишем переменные + таски все есть на документалке)
+сжимание кода ( в самом плагине есть compressed )
+npm i gulp-rename
+watch ( встроенный плагин 
+	      gulp.task('watch', function(){
+       		 gulp.watch('app/sass/style.scss', gulp.parallel('sass'))
+     		});
+
+ )
+
+npm install browser-sync-- 
+
+ gulp.task('browser-sync', function() {
+        browserSync.init({
+            server: {
+                baseDir: "app/"
+            }
+        });
+    });
+
+  
+
+ gulp.task ('html', function(){
+        return gulp.src('app/index.html')
+        .pipe(browserSync.reload({
+            stream:true
+        }));
+      });
+
+gulp.watch('app/index.html', gulp.parallel('html'))
+gulp.watch('app/js/main.js', gulp.parallel('js'))
+
+
+npm install gulp-autoprefixer --save-dev-- переменная + тоннель перед ренеймом
+
+ .pipe(autoprefixer({
+            overrideBrowserslist: 'last 8 versions'
+		    }))
+
+
+npm i gulp-concat -- для обединения файлов 
+npm i uglify -- для минифицирования скриптов
+
+gulp.task('scripts', function() {
+        return gulp.src([
+            'node_modules/slick-carousel/slick/slick.js',
+            'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+        ])
+          .pipe(concat('libs.min.js'))
+          .pipe(uglify())
+          .pipe(gulp.dest('app/js'));
+      });
+
+
+
+
+создаем файл .gitignor-- 
+.DS_Store
+.AppleDouble
+.LSOverride
+.vs
+node_modules/
+app/css/
+
+в style.scss импортируем файлы: @import '_vars'; - переменные 
+				@import '_global'; - глобальные стили
+				@import '_fonts'
+
+_vars==$color-text:#546e7a;
+	$red:#e74c3c;
+
+
+
